@@ -1,6 +1,7 @@
 FROM debian:latest
 MAINTAINER atlas <web.dev89@yandex.by>
 
+ENV VIRTUALHOST apache
 RUN apt-get update && apt-get -y upgrade \
     && apt-get install -y apache2 php7.3 php-memcached libapache2-mod-php7.3 git curl
 
